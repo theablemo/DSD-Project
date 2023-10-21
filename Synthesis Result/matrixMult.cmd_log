@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.xst" -ofn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.syr" 
+xst -intstyle ise -ifn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.xst" -ofn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.syr" 
+xst -intstyle ise -ifn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.xst" -ofn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.syr" 
+xst -intstyle ise -ifn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.xst" -ofn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.syr" 
+xst -intstyle ise -ifn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.xst" -ofn "C:/Users/abolnejadian.mehran/Desktop/DSD/matrix/matrixMult.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7a100t-csg324-2I matrixMult.ngc matrixMult.ngd  
+map -intstyle ise -p xa7a100t-csg324-2I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o matrixMult_map.ncd matrixMult.ngd matrixMult.pcf 
+par -w -intstyle ise -ol high -mt off matrixMult_map.ncd matrixMult.ncd matrixMult.pcf 
+trce -intstyle ise -v 3 -s 2I -n 3 -fastpaths -xml matrixMult.twx matrixMult.ncd -o matrixMult.twr matrixMult.pcf 
